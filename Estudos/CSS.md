@@ -2,23 +2,23 @@
 
 ## Padding
 
-Por padrão, o padding pode ser escrito por três formas:
+Por padrÃ£o, o padding pode ser escrito por trÃªs formas:
 
-** Aplica o estilo para sentido horizontal e vertical **
+#### Aplica o estilo para sentido horizontal e vertical
 ```
  tag {
 	padding: 10px;
  }
 ```
 
-** Aplica o estilo para sentido vertical apenas **
+#### Aplica o estilo para sentido vertical apenas
 ```
  tag {
 	padding: 10px 0;
  }
 ```
 
-** Aplica o estilo para sentido horizontal e vertical, porém, valores diferentes. **
+####  Aplica o estilo para sentido horizontal e vertical, porÃ©m, valores diferentes.
 ```
  tag {
 	padding: 10px 10px 10px 10px;
