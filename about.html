@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <style media="screen">
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'raleway', sans-serif;
+  }
+
+  .padding {
+    padding: 8em 0;
+  }
+
+  .top-bar {
+    background-color: #2ABD93;
+  }
+  .top-bar ul {
+    background-color: transparent !important;
+  }
+  .top-bar a {
+    color: #fff;
+    transition:0.5s;
+  }
+  .top-bar a:hover {
+    color: #8a8a8a;
+    transition:0.5s;
+  }
+  #footer{
+    background-color:#c6c6c6;
+  }
+
+  #center{
+    text-align: center;
+  }
+  .menu ul li, a {
+    color: #fff;
+    display: inline;
+    padding: 10px;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="row columns">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Zurb</li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="padding" id="intro">
+      <div class="row">
+        <div class="columns medium-12 text-center">
+            <h2>Design for People</h2>
+          <div class="row columns medium-12">
+            <div class="menu">
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Values</a></li>
+                <li><a href="#">Talent</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="padding:4em 0">
+      <div class="row">
+        <div class="medium-10 large-9 columns large-centered">
+          <p><b>ZURB is a product design company</b> that has helped millions of designers create better products, websites and services since 1998. We’re a team of T-shaped product design experts with a bold mission: Change the way people design connected products and services. We lead by design through our consulting, product design tools and training. Over the last two decades, we’ve developed Progressive Design, a system that helps us create consistently impactful work that touches millions of people around the globe every day.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="columns medium-4">
+          <img class="thumbnail" src="http://placehold.it/300x340/2ABD93/FFF?text=Imagem I" alt="">
+            </div>
+              <div class="columns medium-8">
+                <h2>Our Fearless Leader</h2>
+                <h6>Bryan Zmijewski, Chief Instigator</h5>
+                  <p>Stanford Alumnus and former lecturer, Bryan leads the charge against the forces of banality, shaping and changing the way we think about building products through Progressive Design. Part man, part muse, Bryan is constantly challenging and inspiring ZURBians and the world to 'Do stuff better!'.</p>
+                  <p>Each month, Bryan chats with influencers and synthesizes his research into 5 insights on design. Stay up to date on design trends and developments with his monthly email, the Design Feedback Loop:</p>
+                  <button class="button secondary" type="button" name="button">Get to Know Bryan</button>
+              </div>
+      </div>
+      <br>
+      <br>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="columns text-center">
+          <h3>Introducing the ZURBians</h3>
+            <p>Our team talent means everything to us — it defines our culture, process and environment. We put an emphasis on working with smart people who uphold our values and create new opportunities for our clients, customers and users.</p>
+            <button type="button" id="clique" name="button">clique-me</button>
+        </div>
+      </div>
+      <div class="row small-up-2 medium-up-3 large-up-8" id="galeria">
+        <!-- Galeria -->
+      </div>
+    </section>
+  </main>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(() => {
+      let image = "<div class='column column-block'><img src='http://placehold.it/600x600' class='thumbnail' alt=''></div>"
+      let gallery = ''
+      let quantidade = 16
+      if (quantidade === 0 || quantidade === null || quantidade === 'undefined' || quantidade === '') {
+        gallery += "<p class='lead text-center'>Images not found.</p>"
+      }
+      else {
+        for (var i = 0; i < quantidade; i++) {
+          gallery += image
+        }
+      }
+      document.getElementById("galeria").innerHTML = gallery
+    })
+
+
+    $('#clique').click(() => {
+      alert('obrigado, voce clicou em mim')
+    })
+  </script>
+  </body>
+</html>
